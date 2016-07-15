@@ -1,0 +1,35 @@
+<div id="album" ng-if="$ctrl.album">
+  <h1>
+    {{$ctrl.album.name}}
+  </h1>
+  <header class="album-header">
+    <div class="row">
+      <div class="col-md-4">
+        <div ng-if="$ctrl.album.images.length > 0">
+          <img class="album-thumb" ng-src="{{$ctrl.album.images[0].url}}">
+        </div>
+        <h4 ng-if="$ctrl.album.artists.length > 0">
+          <span ng-repeat="artist in $ctrl.album.artists">{{artist.name}}</span>
+        </h4>
+        <h5>Release Date: {{album.release_date}}</h5>
+        <a href="{{album.external_urls.spotify}}" target="_blank">Listen to that Music Bro'..</a>
+      </div>
+      <div class="col-md-8">
+
+        <table class="table table-striped table-hover ">
+          <tbody>
+            <tr ng-repeat="track in $ctrl.album.tracks.items">
+              <td>{{track.track_number}}</td>
+              <td>{{track.name}}</td>
+              <td>{{track.duration_ms}}</td>
+              <td>
+                <audio controls ng-src="{{$ctrl.getAudioUrl(track.preview_url)}}"></audio>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </header>
+</div>

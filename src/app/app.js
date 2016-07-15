@@ -9,6 +9,9 @@
                 .when('/artist/:id', {
                     template: '<artist><artist>'
                 })
+                .when('/album/:id', {
+                    template: '<album></album>'
+                })
                 .when('/about', {
                     template: '<about><about>'
                 })

@@ -10,7 +10,6 @@
         function constructor() {}
 
         vm.searchMusic = function(){
-            console.log(vm.searchStr);
             spotifyService.getArtists(vm.searchStr).then(function(response) {
                 console.log(response.data);
                 vm.searchResult = response.data.artists;
