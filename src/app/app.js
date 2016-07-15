@@ -6,6 +6,9 @@
                 .when('/', {
                     template: '<search><search>'
                 })
+                .when('/artist/:id', {
+                    template: '<artist><artist>'
+                })
                 .when('/about', {
                     template: '<about><about>'
                 })
