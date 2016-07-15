@@ -21,7 +21,7 @@
             <tr ng-repeat="track in $ctrl.album.tracks.items">
               <td>{{track.track_number}}</td>
               <td>{{track.name}}</td>
-              <td>{{track.duration_ms}}</td>
+              <td>{{track.duration_ms | duration}}</td>
               <td>
                 <audio controls ng-src="{{$ctrl.getAudioUrl(track.preview_url)}}"></audio>
               </td>
