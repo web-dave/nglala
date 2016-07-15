@@ -15,4 +15,4 @@ run  `npm i` to install dependencies
 
 run `npm start` to start the project and serve it at [http://localhost:3000/src/index.html](http://localhost:3000/src/index.html)
 
-The browser reloads automaticly at every change of the source files. 
+The browser auto-reloads at every change of the source files. 
