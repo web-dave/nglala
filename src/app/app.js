@@ -1,10 +1,7 @@
 (function () {
     'use strict';
     angular.module('nglala', ['ngComponentRouter'])
-        .config(function ($locationProvider) {
-            $locationProvider.html5Mode(true);
-        })
-        .value('$routerRootComponent', 'search')
+        .value('$routerRootComponent', 'topNav');
         // .config(function ($routeProvider) {
         //     $routeProvider
         //         .when('/', {
