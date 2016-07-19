@@ -15,7 +15,9 @@
         controller: topNavController,
         $routeConfig: [
             { path: '/', name: 'Search', component: 'search', useAsDefault: true },
-            { path: '/about', name: 'About', component: 'about' }
+            { path: '/about', name: 'About', component: 'about' },
+            { path: '/artist/:id', name: 'Artist', component: 'artist'},
+            { path: '/album/:id', name: 'Album', component: 'album'}
         ]
     };
 
