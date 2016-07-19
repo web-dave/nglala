@@ -2,20 +2,24 @@
     'use strict';
 
     /* @ngInject */
-    function artistController($routeParams, spotifyService) {
+    function artistController(spotifyService) {
         var vm = this;
         vm.artist = '';
         vm.albums = '';
 
-        function constructor() {
-            spotifyService.getArtist($routeParams.id).then(function(response){
+        this.$routerOnActivate = function (next) {
+            
+            spotifyService.getArtist(next.params.id).then(function(response){
                 vm.artist = response.data;
             });
+            
 
-            spotifyService.getAlbums($routeParams.id).then(function(response){
+            spotifyService.getAlbums(next.params.id).then(function(response){
                 vm.albums = response.data;
             });
-        }
+        };
+
+        function constructor() {}
 
         constructor();
     }
