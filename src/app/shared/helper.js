@@ -15,7 +15,7 @@
                 .otherwise({ redirectTo: '/' });
         });
     angular.element(document).ready(function () {
-        angular.bootstrap(document.body, ['nglala']);
+        angular.bootstrap(document.body, ['modulename']);
     });
 
 
