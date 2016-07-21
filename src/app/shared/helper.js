@@ -2,7 +2,19 @@
 (function () {
     'use strict';
 
-    angular.module('modulename', []);
+    angular.module('modulename', [])
+    .config(function ($routeProvider) {
+            $routeProvider
+                .when('/', {
+                    controller: 'mainController',
+                    template: 'todo'
+                })
+                .when('/about', {
+                    template: '<about></about>'
+                })
+                .otherwise({ redirectTo: '/' });
+       });
+
 })();
 // directive
 (function () {
