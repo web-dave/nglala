@@ -21,7 +21,7 @@
     }
 
     var artist = {
-        templateUrl: 'app/components/artist/artist.component.html',
+        templateUrl: 'src/app/components/artist/artist.component.html',
         controller: artistController
     };
 

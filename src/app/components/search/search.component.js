@@ -20,7 +20,7 @@
     }
 
     var search = {
-        templateUrl: 'app/components/search/search.component.html',
+        templateUrl: 'src/app/components/search/search.component.html',
         controller: searchController
     };
 

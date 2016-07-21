@@ -21,7 +21,7 @@
     }
 
     var album = {
-        templateUrl: 'app/components/album/album.component.html',
+        templateUrl: 'src/app/components/album/album.component.html',
         controller: albumController
     };
 

@@ -11,7 +11,7 @@
     }
 
     var about = {
-        templateUrl: 'app/components/about/about.component.html',
+        templateUrl: 'src/app/components/about/about.component.html',
         controller: aboutController
     };
 

@@ -8,7 +8,7 @@
 
     <div ng-repeat="item in $ctrl.searchResult.items" class="item">
       <div class="well">
-        <h4><a href="#/artist/{{item.id}}">{{item.name}}</a></h4>
+        <h4><a href="/artist/{{item.id}}">{{item.name}}</a></h4>
         <hr>
           <img ng-if="item.images.length !== 0" width="150" ng-src="{{item.images[0].url}}" class="img-thumbnail">
           <img ng-if="item.images.length === 0" width="150" ng-src="http://placehold.it/350/060606/efefef?text=no+IMG" class="img-thumbnail">
