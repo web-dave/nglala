@@ -11,7 +11,7 @@
     }
 
     var topNav = {
-        templateUrl: 'app/components/topnav/topnav.html',
+        templateUrl: 'app/components/topnav/topnav.component.html',
         controller: topNavController
     };
 
